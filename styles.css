@@ -10,14 +10,19 @@ input {
   outline: none;
 }
 
-#userText {
-  padding-top: 40%;
-  font-size: 1.2em;
+#logo {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255,0,0,0.3);
 }
 
 .text-tile {
   height: 12em;
-  width: 12em;
+  width: 20%;
   float: left;
   display: block;
 }
@@ -32,6 +37,39 @@ input {
 
 .text-tile:first-of-type {
   background-color: #FFF;
+  width: 100%;
+  padding-top: 10em;
+  height: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 5px #AAA;
+  margin-bottom: 10px;
+}
+
+#userText {
+  display: block;
+  max-width: 50%;
+  font-size: 1.5em;
+  text-align: center;
+  border-bottom: 2px dotted #DDD;
+  color: #555;
+}
+
+::-webkit-input-placeholder {
+   text-align: center;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: center;
+}
+
+:-ms-input-placeholder {
+   text-align: center;
 }
 
 textarea {
@@ -42,8 +80,8 @@ textarea {
   border: none;
   resize: none;
   outline: none;
-  font-size: 1.5em;
+  font-size: 2em;
   white-space: normal;
   text-align: center;
-  line-height: 7em;
+  line-height: 5em;
 }

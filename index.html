@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/lodash@4.16.0"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="auto-complete.css">
     <link rel="stylesheet" href="styles.css">
 
     <!--[if lt IE 9]>
@@ -28,10 +29,12 @@
       };
     </script>
 
+    <div id="logo"></div>
+
     <div id="wrapper">
 
       <div class="text-tile">
-        <input id="userText" type="text" @input="update" v-on:keyup.enter="onSubmit" placeholder="Test or add fonts!">
+        <input id="userText" type="text" @input="update" v-on:keyup.enter="onSubmit" v-model="userInput" placeholder="Test or add fonts!">
       </div>
 
       <div class="text-tile" v-for="family in families">
@@ -41,6 +44,7 @@
     </div>
 
     <script src="vue.js"></script>
+    <script src="auto-complete.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
     <script src="scripts.js"></script>
   </body>
