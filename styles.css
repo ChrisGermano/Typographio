@@ -1,7 +1,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: #DDD;
+  background-color: #FAFAFA;
 }
 
 input {
@@ -27,15 +27,15 @@ input {
 }
 
 .text-tile textarea {
-  background-color: #DDD;
+  background-color: #EFEFEF
 }
 
 .text-tile:nth-child(2n-1) textarea {
-  background-color: #AAA;
+  background-color: #DBDBDB;
 }
 
 .text-tile:first-of-type {
-  background-color: #FFF;
+  background-color: #FCFCFC;
   width: 100%;
   padding-top: 10em;
   height: 20em;
