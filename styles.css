@@ -1,0 +1,49 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #DDD;
+}
+
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+#userText {
+  padding-top: 40%;
+  font-size: 1.2em;
+}
+
+.text-tile {
+  height: 12em;
+  width: 12em;
+  float: left;
+  display: block;
+}
+
+.text-tile textarea {
+  background-color: #DDD;
+}
+
+.text-tile:nth-child(2n-1) textarea {
+  background-color: #AAA;
+}
+
+.text-tile:first-of-type {
+  background-color: #FFF;
+}
+
+textarea {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 1.5em;
+  white-space: normal;
+  text-align: center;
+  line-height: 7em;
+}

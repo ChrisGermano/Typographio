@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Typographio</title>
+    <meta name="description" content="Quickly render text in your favorite Google Font families">
+    <meta name="author" content="Chris Germano">
+
+    <script src="https://unpkg.com/marked@0.3.6"></script>
+    <script src="https://unpkg.com/lodash@4.16.0"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <script>
+      window.onerror = function(message, url, lineNumber) {
+          // code to execute on an error
+          return true; // prevents browser error messages
+      };
+    </script>
+
+    <div id="wrapper">
+
+      <div class="text-tile">
+        <input id="userText" type="text" @input="update" v-on:keyup.enter="onSubmit" placeholder="Test or add fonts!">
+      </div>
+
+      <div class="text-tile" v-for="family in families">
+        <textarea :value="family" v-bind:style="{ fontFamily : family }"></textarea>
+      </div>
+
+    </div>
+
+    <script src="vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
